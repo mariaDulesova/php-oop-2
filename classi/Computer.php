@@ -16,7 +16,7 @@ class Computer extends Product {
 
     public function setDiscount($age) {
         $compDiscount = parent::setDiscount($age);
-        return $this->discount = $compDiscount + 5;
+        return $this->discount = $compDiscount + 0.05;
 
     }
 
@@ -27,8 +27,6 @@ $computer1->setDiscount($age);
 $computer1->getPrice();
 
 var_dump($computer1);
-echo $age;
-echo $this->price;
 
 ?>
 

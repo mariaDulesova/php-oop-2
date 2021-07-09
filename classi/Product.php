@@ -44,6 +44,6 @@ $product1->getPrice();
 
 var_dump($product1);
 echo $age;
-echo $this->price;
+
 
 ?>

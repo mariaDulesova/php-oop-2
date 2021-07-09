@@ -15,7 +15,7 @@ class Phone extends Product {
 
     public function setDiscount($age) {
         $compDiscount = parent::setDiscount($age);
-        return $this->discount = $compDiscount + 10;
+        return $this->discount = $compDiscount + 0.10;
 
     }
 
@@ -25,9 +25,7 @@ $phone1 = new Phone("Apple", "iPhone12", "iOS", 1000, 0,"Dual-Camera-System", "5
 $phone1->setDiscount($age);
 $phone1->getPrice();
 
-
 var_dump($phone1);
-echo $age;
-echo $this->price;
+
 
 ?>
