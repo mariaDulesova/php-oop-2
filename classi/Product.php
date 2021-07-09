@@ -21,7 +21,7 @@ class Product {
 
     public function setDiscount($age) {
         if ($age<18 || $age>65) {
-            $this->discount = 20;
+            $this->discount = 0.20;
         } else {
             $this->discount = 0;
         }  
@@ -29,16 +29,21 @@ class Product {
 
     }
 
-    // public function getDiscount() {
-    //     return $this->discount;
-    // }
+    public function getPrice() {
+        return $this->price = $this->price * (1-$this->discount);
+    }
 
 
 }
 
-$product1 = new Product("Apple", "MacBook Air", "MacOS", 300);
-echo $product1->setDiscount(70);
+$age = 70;
+
+$product1 = new Product("Apple", "MacBook Air", "MacOS", 957);
+$product1->setDiscount($age);
+$product1->getPrice();
 
 var_dump($product1);
+echo $age;
+echo $this->price;
 
 ?>

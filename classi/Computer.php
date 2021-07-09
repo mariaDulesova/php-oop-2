@@ -22,10 +22,13 @@ class Computer extends Product {
 
 }
 
-$computer2 = new Computer("Apple", "MacBook Air", "MacOS", 300, 0,"8gb", "18h", "1.3kg");
-echo $computer2->setDiscount(17);
+$computer1 = new Computer("Apple", "MacBook Air", "MacOS", 1240, 0,"8gb", "18h", "1.3kg");
+$computer1->setDiscount($age);
+$computer1->getPrice();
 
-var_dump($computer2);
+var_dump($computer1);
+echo $age;
+echo $this->price;
 
 ?>
 
